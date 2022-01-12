@@ -1,0 +1,11 @@
+# 폴더무시
+baekjoon/executable/
+leetcode/executable/
+jongman/executable/
+nocope/executable/
+
+# 파일무시
+*.java.swp
+*.cpp.swp
+*.class
+.DS_Store
