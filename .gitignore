@@ -9,3 +9,4 @@ nocope/executable/
 *.cpp.swp
 *.class
 .DS_Store
+tags
