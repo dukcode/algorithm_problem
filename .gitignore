@@ -3,6 +3,7 @@ baekjoon/executable/
 leetcode/executable/
 jongman/executable/
 nocope/executable/
+barkingdog/executable/
 
 # 파일무시
 *.java.swp
