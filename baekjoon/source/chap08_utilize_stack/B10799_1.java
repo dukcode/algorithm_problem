@@ -8,9 +8,9 @@ import java.util.Stack;
 
 
 /**
- * B10799
+ * B10799_1
  */
-public class B10799 {
+public class B10799_1 {
 
     public static void main(String[] args) throws IOException {
         // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,27 +20,19 @@ public class B10799 {
         char[] charArr = br.readLine().toCharArray();
 
         int ans = 0;
-        int cnt = 0;
         Stack<Character> stk = new Stack<>();
-        for (char c : charArr) {
-            if (c == '(') {
-                stk.push(c);
-                cnt++;
-                continue;
+        for (int i = 0; i < charArr.length; ++i) {
+            if (charArr[i] == '(') {
+                stk.push(charArr[i]);
+            } else {
+                if (charArr[i - 1] == '(') {
+                    ans += stk.size();
+                } else {
+                    ans++;
+                }
+                stk.pop();
             }
 
-            if (stk.peek() == '(' && c == ')') {
-                stk.push(c);
-                cnt--;
-                ans += cnt;
-                continue;
-            }
-
-            if (c == ')') {
-                cnt--;
-                ans++;
-                continue;
-            }
         }
 
         bw.write(String.valueOf(ans));
