@@ -7,9 +7,9 @@ import java.io.OutputStreamWriter;
 
 
 /**
- * 0000
+ * AAAA
  */
-public class 0000 {
+public class AAAA {
 
     public static void main(String[] args) throws IOException {
         // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
