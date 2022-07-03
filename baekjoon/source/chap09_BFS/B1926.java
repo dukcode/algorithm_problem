@@ -14,7 +14,6 @@ import java.util.StringTokenizer;
  * B1926
  */
 public class B1926 {
-
         
     static BufferedReader br;
     static BufferedWriter bw;
